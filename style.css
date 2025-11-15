@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Bebas Neue", sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.hero-container{
+    background: url(./Images/bg_header.webp);
+    overflow: hidden;
+    position: relative;
+}
+.header-container{
+    width: clamp(300px,100%,1400px);
+    display: flex;
+    margin: auto;
+    padding: 10px 0px; 
+    gap: 60px;
+}
+.header-container >div{
+    width: 50%;
+    display: flex;
+}
+.header-container >div:nth-child(1) {
+    justify-content: space-around; 
+    gap: 12px;
+}
+.header-container >div:nth-child(1) >img{    
+    height: 40px;
+}
+.header-container >div:nth-child(1) > div {
+        width: clamp(250px, 100%, 350px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-container >div:nth-child(1) > div >a {
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+
+}
+
+/* 2nd Box */
+.header-container >div:nth-child(2) {
+    align-items: center;
+    justify-content: space-evenly;
+}
+.header-container >div:nth-child(2) >div:nth-child(1) {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.header-container >div:nth-child(2) >div:nth-child(1) > i{
+    font-size: 20px;
+    color: #FFB936;
+    transform: rotate(270deg);
+} 
+.header-container >div:nth-child(2) >div:nth-child(1) > h2{
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+} 
+.header-container >div:nth-child(2) > i{
+    font-size: 24px;
+    color :white
+}
+
+@media (width <= 1000px) {
+     header {
+        display: none;
+    }
+}
+
+/* Img */
