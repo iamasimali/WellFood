@@ -179,3 +179,39 @@ object-fit: cover;
     line-height: 280px;
 }
 }
+@media (width <= 840px) {
+    .elemetor_head_a>h1:nth-child(3) {
+    font-size: 180px;
+    line-height: 280px;
+}
+}
+@media (width <= 740px) {
+    .elemetor_head_a>h1:nth-child(3) {
+    font-size: 140px;
+    line-height: 280px;
+}
+}
+@media (width <= 640px) {
+    .elemetor_head_a>h1:nth-child(3) {
+    font-size: 120px;
+    line-height: 280px;
+}
+}
+@media (width <= 540px) {
+    .elemetor_head_a>h1:nth-child(3) {
+    font-size: 100px;
+    line-height: 280px;
+}
+}
+@media (width <= 440px) {
+    .elemetor_head_a>h1:nth-child(3) {
+    font-size: 80px;
+    line-height: 280px;
+}
+}
+@media (width <= 340px) {
+    .elemetor_head_a>h1:nth-child(3) {
+    font-size: 60px;
+    line-height: 280px;
+}
+}

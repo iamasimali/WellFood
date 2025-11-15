@@ -1,0 +1,23 @@
+.menu_container>div:nth-child(1)>div:nth-child(1){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+}
+.menu_container>div:nth-child(1)>div:nth-child(1)>h3{
+    font-size: 55px;
+}
+.menu_container>div:nth-child(1)>div:nth-child(1)>h6{
+    font-size: 20px;
+}
+
+
+
+.menu_container>div:nth-child(1)>div:nth-child(2){
+    background-color: blue;
+}
+
+.menu_container>div:nth-child(1)>div:nth-child(2)>ul>li{
+    background-color: red;
+    border: 2px dotted blue;
+}
