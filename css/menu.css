@@ -1,5 +1,7 @@
 .menu_container {
     padding: 112px 15px 100px;
+    width: clamp(300px, 100%, 1400px);
+    margin: auto;
 }
 .menu_container>div:nth-child(1)>div:nth-child(1){
     height: 220px;
@@ -27,6 +29,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    gap: 20px;
 }
 .menu_items>ul>li {
     background-color: #f4f1ea;
@@ -38,6 +41,8 @@
 .menu_items>ul>li>div:nth-child(1) {
     display: flex;
     justify-content: space-between;
+    /* width: 320px; */
+    gap: 10px;
 }
 
 .menu_items>ul>li>div:nth-child(1)>h3:nth-child(1) {
