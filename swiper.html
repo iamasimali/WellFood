@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -51,10 +51,164 @@
 
   // now we need to assign all parameters to Swiper element
   Object.assign(swiperEl, swiperParams);
+   loop: true,
 
   // and now initialize it
   swiperEl.initialize();
 </script>
 
 </body>
+</html>
+
+
+
+ -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-element-bundle.min.js"></script>
+</head>
+
+<body>
+
+  <swiper-container init="false">
+    <swiper-slide>
+        <div class="swipe_items">
+          <div>
+            <div>
+              <div>
+                <img src="./Images/image_swipe.png" alt="">
+              </div>
+              <div class="swipe_text">
+                <h3>FRIED CHICKEN FRENCH</h3>
+                <div>Burger, Hamburger</div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </swiper-slide>
+    <swiper-slide>
+      <div class="swipe_items">
+        <div>
+          <div>
+            <div>
+              <img src="./Images/image_swipe.png" alt="">
+            </div>
+            <div class="swipe_text">
+              <h3>FRIED CHICKEN FRENCH</h3>
+              <div>Burger, Hamburger</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </swiper-slide>
+    <swiper-slide>
+      <div class="swipe_items">
+        <div>
+          <div>
+            <div>
+              <img src="./Images/image_swipe2.png" alt="">
+            </div>
+            <div class="swipe_text">
+              <h3>ITALIAN BEEF PIZZA</h3>
+              <div>Burger, Hamburger</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </swiper-slide>
+    <swiper-slide>
+      <div class="swipe_items">
+        <div>
+          <div>
+            <div>
+              <img src="./Images/image_swipe3.png" alt="">
+            </div>
+            <div class="swipe_text">
+              <h3>DOUBLE BURGER & FRIES</h3>
+              <div>Burger, Hamburger</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </swiper-slide>
+    <swiper-slide>Slide 5</swiper-slide>
+    </div>
+  </swiper-container>
+
+  <script>
+    const swiperEl = document.querySelector('swiper-container');
+
+    const swiperParams = {
+      slidesPerView: 1,
+      loop: true,
+      breakpoints: {
+        640: { slidesPerView: 2 },
+        1024: { slidesPerView: 3 },
+      },
+    };
+
+    Object.assign(swiperEl, swiperParams);
+
+    swiperEl.initialize();
+  </script>
+
+
+
+
+
+  <div class="swipe_container">
+    <div class="swipe_items">
+      <div>
+        <div>
+          <div>
+            <img src="./Images/image_swipe.png" alt="">
+          </div>
+          <div class="swipe_text">
+            <h3>FRIED CHICKEN FRENCH</h3>
+            <div>Burger, Hamburger</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swipe_items">
+      <div>
+        <div>
+          <div>
+            <img src="./Images/image_swipe2.png" alt="">
+          </div>
+          <div class="swipe_text">
+            <h3>ITALIAN BEEF PIZZA</h3>
+            <div>Burger, Hamburger</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swipe_items">
+      <div>
+        <div>
+          <div>
+            <img src="./Images/image_swipe3.png" alt="">
+          </div>
+          <div class="swipe_text">
+            <h3>DOUBLE BURGER & FRIES</h3>
+            <div>Burger, Hamburger</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+</body>
+
 </html>
