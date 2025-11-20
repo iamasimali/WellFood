@@ -4,66 +4,79 @@
     padding: 25px 0px;
 }
 
-.swipe_items>div:nth-child(1)>div:nth-child(1) {
+.swipe_items {
+    height: 650px;
+    object-fit: cover;
+    overflow: hidden;
     position: relative;
-}
-
-.swipe_items>div:nth-child(1)>div:nth-child(1)>div {
-    padding: 0px 15px;
 
 }
 
-.swipe_items>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>img {
-    width: 570px;
-    height: 600px;
+.swipe_items>img {
+    height: 100%;
+    width: 100%;
+
 }
 
-.swipe_items>div:nth-child(1)>div:nth-child(1)>div:nth-child(2) {
-    background-color: white;
+.swipe_items>div:nth-child(2) {
     position: absolute;
+    bottom: 50px;
+    width: 90%;
+    left: 5%;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: 0.3s;
+    background-color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 550px;
     height: 80px;
-    bottom: 10%;
-    right: 10%;
+    padding: 0px 30px;
+    gap: 10px;
 }
 
-.swipe_items>div:nth-child(1)>div:nth-child(1)>div:nth-child(2)>h3 {
+.swipe_items:hover>div:nth-child(2) {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.swipe_items>div:nth-child(2)>h3 {
     font-weight: 400;
     font-size: 24px;
 }
-
-.swipe_items>div:nth-child(1)>div:nth-child(1)>div:nth-child(2)>div {
+.swipe_items>div:nth-child(2)>div {
     font-family: roboto, sans-serif;
     color: #696969;
+    font-weight: 400;
 }
 
-@media(width>=1400px) {
-    .swipe_items>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>img {
+/* @media(width>=1400px) {
+    .swipe_items>img {
         width: 430px;
         height: 460px;
     }
-    .swipe_items>div:nth-child(1)>div:nth-child(1)>div:nth-child(2){
-    width: 400px;
-    height: 75px;
-    bottom: 10%;
-    right: 10%;
+
+    .swipe_items>div:nth-child(2) {
+        width: 400px;
+        height: 75px;
+        bottom: 10%;
+        right: 10%;
+    }
 }
-}
-@media(width<=575px) {
-    .swipe_items>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>img {
+
+@media(width<=625px) {
+    .swipe_items>img {
         width: 545px;
         height: 590px;
     }
-    .swipe_items>div:nth-child(1)>div:nth-child(1)>div:nth-child(2){
-    width: 490px;
-    height: 75px;
-    bottom: 5%;
-    right: 6%;
-}
-}
+
+    .swipe_items>div:nth-child(2) {
+        width: 490px;
+        height: 75px;
+        bottom: 5%;
+        right: 6%;
+    }
+} */
 
 
 

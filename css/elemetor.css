@@ -166,7 +166,7 @@
 .elemetor_head>div:nth-child(2)>div:nth-child(5){
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 .elemetor_head>div:nth-child(2)>div:nth-child(5)>div{
     width: 220px;
@@ -180,13 +180,13 @@
 .elemetor_head>div:nth-child(2)>div:nth-child(5)>div>h5{
     font-size: 22px;
     font-weight: 500;
-    margin: 5px 0;
+    margin: 15px 0px;
 }
 .elemetor_head>div:nth-child(2)>div:nth-child(5)>div>p{
       font-size: 14px;
     font-weight: 500;
     font-family: "Roboto", sans-serif;
-    color: #171717;
+    color: #696969;
     text-transform: capitalize;
 }
 

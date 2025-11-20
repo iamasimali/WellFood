@@ -22,7 +22,7 @@
  position: absolute;
  inset: 0;
  font-size: 15px;
- color: #171717;
+ color: black;
  letter-spacing: 1px;
  opacity: 1;
 }
@@ -40,13 +40,12 @@
 }
 
 .button_text_sec i {
- color: #171717;
+ color: black;
  font-size: 15px;
  letter-spacing: 1px;
  font-style: normal;
  transition: all 2s ease;
  transform: translateY(-20px);
- margin-left: 1px;
  opacity: 0;
 }
 
