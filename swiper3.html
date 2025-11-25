@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback Slider</title>
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+
+  <style>
+    /* ---------- NEW CLEAN CSS (DIFFERENT FROM YOUR SITE STYLE) ---------- */
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Poppins", sans-serif;
+      background: #fafafa;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .feedback_header {
+      text-align: center;
+      margin-bottom: 40px;
+      
+    }
+
+    .feedback_header h6 {
+      color: #ff6a00;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 14px;
+      margin-bottom: 10px;
+      
+    }
+
+    .feedback_header h1 {
+      font-size: 32px;
+      font-weight: 700;
+      color: #222;
+    }
+
+    /* Feedback card style */
+    
+    .feedback_card {
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.07);
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      height: 100%;
+  
+    }
+
+    .feedback_card img.quote {
+    height: 91px;
+    width: 91px;
+    transform: rotate(180deg);
+      filter: invert(19%) sepia(97%) saturate(7489%) hue-rotate(1deg) brightness(103%) contrast(119%);
+
+
+
+    }
+
+    .feedback_card h4 {
+      line-height: 1.5;
+      font-size: 17px;
+      font-weight: 400;
+      color: #444;
+    }
+
+    .feedback_user {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-top: auto;
+      
+    }
+
+    .feedback_user img {
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .feedback_user h5 {
+      margin: 0;
+      font-size: 16px;
+      font-weight: 600;
+      color: #222;
+    }
+
+    .feedback_user p {
+      margin: 0;
+      font-size: 14px;
+      color: #777;
+    }
+
+    /* Swiper pagination dots */
+    #feedbackSlider .swiper-pagination-bullet {
+      background: #ff6a00;
+      opacity: 0.4;
+    }
+
+    #feedbackSlider .swiper-pagination-bullet-active {
+      opacity: 1;
+      background: #ff2e00;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<section>
+  <div class="feedback_header">
+    <h6>Customer Feedback</h6>
+    <h1>What Our Happy Customers Say</h1>
+  </div>
+
+  <!-- Swiper Slider -->
+  <swiper-container id="feedbackSlider" loop="true" pagination="true" space-between="30" slides-per-view="1" init="false">
+
+    <swiper-slide>
+      <div class="feedback_card">
+        <img src="./Images/quote.png" class="quote" alt="">
+        <h4>
+          Renowned for its versatility in the kitchen, Red King Crab can be
+          prepared in various ways, from simple steaming or boiling to
+          elaborate preparations such as grilling incorporating.
+        </h4>
+
+        <div class="feedback_user">
+          <img src="./Images/feedback1.webp" alt="">
+          <div>
+            <h5>STEVEN H. PAXSON</h5>
+            <p>CEO & Founder</p>
+          </div>
+        </div>
+      </div>
+    </swiper-slide>
+
+    <swiper-slide>
+      <div class="feedback_card">
+        <img src="./Images/quote.png" class="quote" alt="">
+        <h4>
+          Renowned for its versatility in the kitchen, Red King Crab can be
+          prepared in various ways, from simple steaming or boiling to
+          elaborate preparations such as grilling incorporating.
+        </h4>
+
+        <div class="feedback_user">
+          <img src="./Images/feedback2.webp" alt="">
+          <div>
+            <h5>STEVEN H. PAXSON</h5>
+            <p>CEO & Founder</p>
+          </div>
+        </div>
+      </div>
+    </swiper-slide>
+
+    <swiper-slide>
+      <div class="feedback_card">
+        <img src="./Images/quote.png" class="quote" alt="">
+        <h4>
+          Renowned for its versatility in the kitchen, Red King Crab can be
+          prepared in various ways, from simple steaming or boiling to
+          elaborate preparations such as grilling incorporating.
+        </h4>
+
+        <div class="feedback_user">
+          <img src="./Images/feedback3.webp" alt="">
+          <div>
+            <h5>STEVEN H. PAXSON</h5>
+            <p>CEO & Founder</p>
+          </div>
+        </div>
+      </div>
+    </swiper-slide>
+
+  </swiper-container>
+</section>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-element-bundle.min.js"></script>
+
+<script>
+  const feedbackSwiper = document.querySelector('#feedbackSlider');
+
+  const feedbackParams = {
+    loop: true,
+    pagination: { clickable: true },
+    slidesPerView: 1,
+    breakpoints: {
+      768: { slidesPerView: 2 },
+      1200: { slidesPerView: 3 }
+    }
+  };
+
+  Object.assign(feedbackSwiper, feedbackParams);
+  feedbackSwiper.initialize();
+</script>
+
+</body>
+</html>

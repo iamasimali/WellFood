@@ -1,12 +1,145 @@
-.feedback_container>div:nth-child(1){
-    text-align: center;
+.feedback_container {
+  background-image: url(../Images/feedback_background.webp);
+  height: 100%;
+  width: clamp(300px, 100%, 1400px);
+  padding: 50px 30px;
+  margin: auto;
 }
-.feedback_container>div:nth-child(1)>h6{
-    color: #EC3D08;
-    font-size: 20px;
-    font-weight: 400
+
+.feedback_header {
+  text-align: center;
+  margin-bottom: 40px;
 }
-.feedback_container>div:nth-child(1)>h1{
-    font-size: 55px;
-    font-weight: 400
+
+.feedback_header h6 {
+  color: #EC3D08;
+  font-size: 20px;
+  /* margin: 20px 0px; */
+  font-weight: 400;
+
+}
+
+.feedback_header h1 {
+  font-size: 55px;
+  font-weight: 400;
+  color: white;
+  width: clamp(300px, 100%, 700px);
+  margin: auto;
+}
+
+/* Feedback card style */
+
+.feedback_card {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  width: clamp(300px, 100%, 400px);
+  height: 100%;
+  padding: 20px 48px 40px 50px;
+  margin: auto;
+  
+
+}
+
+.feedback_card>hr {
+  margin: 20px 0px;
+}
+
+.feedback_card img.quote {
+  height: 91px;
+  width: 91px;
+  transform: rotate(180deg);
+  filter: invert(19%) sepia(97%) saturate(7489%) hue-rotate(1deg) brightness(103%) contrast(119%);
+
+
+
+}
+
+.feedback_card h4 {
+  line-height: 1.5;
+  font-size: 24px;
+  font-weight: 400;
+  color: #0E1317;
+
+}
+
+.feedback_user {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: auto;
+
+}
+
+.feedback_user img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.feedback_user h5 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 400;
+  color: #0E1317;
+}
+
+.feedback_user p {
+  margin: 0;
+  font-size: 16px;
+  color: #696969;
+  font-family: "roboto", sans-serif;
+}
+
+
+/* tweak global gap between bullets */
+#feedbackSlider {
+  --swiper-pagination-bullet-horizontal-gap: 2px; /* small gap so they almost touch */
+}
+
+/* base bullet (inactive) */
+#feedbackSlider::part(bullet) {
+  background-color: #ff6a00;
+  opacity: 0.5;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+
+  /* smooth morph effect */
+  transition:
+    width 0.35s ease-in-out,
+    border-radius 0.35s ease-in-out,
+    background-color 0.35s ease-in-out,
+    opacity 0.35s ease-in-out;
+}
+
+/* active bullet – long pill */
+#feedbackSlider::part(bullet-active) {
+  background-color: #ff2e00;
+  opacity: 1;
+  width: 28px;          /* length of the pill */
+  height: 8px;
+  border-radius: 999px; /* full pill shape */
+}
+
+/* give the slider extra space below the slides */
+#feedbackSlider {
+  padding-bottom: 50px;   /* adjust as needed */
+}
+
+/* keep pagination near the real bottom of the container */
+#feedbackSlider::part(pagination) {
+  bottom: 10px;           /* small positive value */
+  position: absolute;
+}
+
+
+
+
+@media(width <=1200px) {
+  .feedback_card {
+    width: clamp(300px, 100%, 550px);
+  }
 }

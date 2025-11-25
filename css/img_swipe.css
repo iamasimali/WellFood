@@ -3,7 +3,10 @@
     justify-content: center;
     padding: 25px 0px;
 }
+#swipper2{
+        padding: 30px;
 
+}
 .swipe_items {
     height: 650px;
     object-fit: cover;
@@ -15,6 +18,7 @@
 .swipe_items>img {
     height: 100%;
     width: 100%;
+    object-fit: cover;
 
 }
 

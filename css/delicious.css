@@ -1,26 +1,25 @@
 .elemetor_container {
     width: 100%;
     height: 100%;
-    background-image: url("../Images/downloaddotted.webp");
-    background-size: contain;
-    background-repeat: no-repeat;
     background-color: black;
     position: relative;
-    z-index: -2;
 }
 
 .elemetor_head_a {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
     width: clamp(300px, 100%, 1400px);
     margin: auto;
+
+    display: flex;
+    gap: 20px;
     justify-content: space-between;
-    margin-top: 80px;
+
+    padding: 100px 20px;
     position: relative;
-    padding: 200px 40px 70px 40px;
+    z-index: 2;
 }
+
+
+
 
 .elemetor_head_a>div:nth-child(1) {
     width: clamp(300px, 100%, 600px);
@@ -52,54 +51,54 @@
     color: #FFFFFF;
     margin-top: 22px;
     font-family: "Roboto", sans-serif;
+    margin-bottom: 30px;
+
 
 }
 
 
-.elemetor_head_a>div:nth-child(1)>div {
-    margin-top: 30px;
-    display: flex;
 
-}
 
 .elemetor_head_a>div:nth-child(2) {
-    width: clamp(300px, 100%, 600px);
-    padding: 5px;
-
-}
-
-.elemetor_head_a>div:nth-child(2)>div:nth-child(1) {
-    display: flex;
-    position: relative;
     width: clamp(300px, 100%, 700px);
+    padding: 5px;
+    align-self: center;
+    position: relative;
 }
 
-.elemetor_head_a>div:nth-child(2)>div:nth-child(1)>img {
-    position: relative;
+
+.elemetor_head_a>div:nth-child(2)>img {
+
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
+
 
 
 }
 
-.elemetor_head_a>div:nth-child(2)>div:nth-child(1)>div:nth-child(2) {
+.elemetor_head_a>div:nth-child(2)>div:nth-child(2) {
     position: absolute;
-    bottom: 30%;
-    right: 50%;
+    bottom: 0;
+    right: 30px;
+    height: 180px;
+    max-width: 180px;
+
 }
 
-.elemetor_head_a>div:nth-child(2)>div:nth-child(1)>div:nth-child(2)>img {
-    position: absolute;
-    height: 200px;
+.elemetor_head_a>div:nth-child(2)>div:nth-child(2)>img {
+    height: 100%;
+    width: 100%;
 }
 
 
-.elemetor_head_a>div:nth-child(2)>div:nth-child(1)>div:nth-child(2)>h5 {
+.elemetor_head_a>div:nth-child(2)>div:nth-child(2)>h5 {
     font-size: 50px;
     position: absolute;
-    top: 30px;
-    left: 64px;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
     color: black;
 
 }
@@ -111,33 +110,56 @@
     justify-content: space-between;
 }
 
-.elemetor_head_a>h1:nth-child(3) {
+
+
+
+
+.elemetor_container>div:nth-child(2) {
+    background-image: url("../Images/downloaddotted.webp");
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    object-fit: contain;
+}
+
+.elemetor_container>div:nth-child(3) {
+    background-image: url("../Images/delicious_back.webp");
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+}
+
+
+
+
+.elemetor_container>h1:nth-child(4) {
     font-size: 280px;
     line-height: 280px;
     position: absolute;
     top: 0px;
     left: 50%;
-    color: rgba(255, 255, 255, 0.2);
     transform: translateX(-50%);
-    display: inline-block;
     white-space: nowrap;
+    /* transform: translateX(-50%); */
+    color: rgba(255, 255, 255, 0.1);
+
+    display: inline-block;
 }
 
-.elemetor_container>div:nth-child(2) {
-    width: 100%;
-    background-image: url("../Images/delicious_back.webp");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: 100%;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0px;
-    z-index: -1;
-}
+
 
 @media (width <=1200px) {
     .elemetor_head_a>h1:nth-child(3) {
+        font-size: 240px;
+        line-height: 280px;
+    }
+
+    .elemetor_container>h1:nth-child(4) {
         font-size: 240px;
         line-height: 280px;
     }
@@ -163,62 +185,79 @@
         padding: 5px;
     }
 
-    .elemetor_head_a>div:nth-child(2)>div>img {
-        width: 100%;
-        height: 100%;
+    .elemetor_head_a>div:nth-child(2)>div:nth-child(2) {
+        bottom: 50px;
+        right: 140px;
     }
 
-    .elemetor_head_a>h1:nth-child(3) {
-        font-size: 220px;
+
+    .elemetor_head_a>div:nth-child(2)>div:nth-child(2)>h5:nth-child(2) {
+        font-size: 50px;
+        position: absolute;
+        bottom: 0px;
+        right: 0;
+    }
+
+    .elemetor_container>h1:nth-child(4) {
+        font-size: 170px;
         line-height: 280px;
     }
 }
 
-@media (width <=940px) {
-    .elemetor_head_a>h1:nth-child(3) {
-        font-size: 200px;
-        line-height: 280px;
+@media (width <= 768px) {
+    .elemetor_container>h1:nth-child(4) {
+        font-size: 70px;
+        line-height: 100px;
+    }
+    .elemetor_head_a>div:nth-child(1)>h1 {
+        font-size: 75px;
+        font-weight: 400;
+
     }
 }
 
-@media (width <=840px) {
-    .elemetor_head_a>h1:nth-child(3) {
-        font-size: 180px;
-        line-height: 280px;
-    }
-}
 
-@media (width <=740px) {
-    .elemetor_head_a>h1:nth-child(3) {
-        font-size: 140px;
-        line-height: 280px;
-    }
-}
-
-@media (width <=640px) {
-    .elemetor_head_a>h1:nth-child(3) {
-        font-size: 120px;
-        line-height: 280px;
-    }
-}
-
-@media (width <=540px) {
-    .elemetor_head_a>h1:nth-child(3) {
-        font-size: 100px;
-        line-height: 280px;
-    }
-}
-
-@media (width <=440px) {
-    .elemetor_head_a>h1:nth-child(3) {
-        font-size: 80px;
-        line-height: 280px;
-    }
-}
-
-@media (width <=340px) {
-    .elemetor_head_a>h1:nth-child(3) {
+ @media (width <=768px) {
+    .elemetor_head_a>div:nth-child(1)>h1 {
         font-size: 60px;
-        line-height: 280px;
+        
+
+    }
+} 
+
+@media (width <=500px) {
+    .elemetor_head_a>div:nth-child(2)>div:nth-child(2) {
+        height: 150px;
+        width: 150px;
+        aspect-ratio: 1;
+        bottom: 10px;
+        right: 20px;
+    }
+
+
+    .elemetor_head_a>div:nth-child(2)>div:nth-child(2)>h5:nth-child(2) {
+        font-size: 40px;
+        bottom: -20px;
+    }
+
+    .elemetor_head_a>div:nth-child(1)>h1 {
+        color: #FFFFFF;
+        font-size: 45px;
+        
+
+    }
+
+    .elemetor_head_a>div:nth-child(1)>h6 {
+        color: #FFB936;
+        font-size: 20px;
+        font-weight: 400;
+        margin-top: -10px;
+
+    }
+
+    .elemetor_head_a>div:nth-child(1)>h6>span {
+        font-size: 40px;
+       
+
     }
 }
