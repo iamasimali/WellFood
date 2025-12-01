@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juice/Blog Swiper</title>
+  <link rel="stylesheet" href="./css/juice_section.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-element-bundle.min.js"></script>
+</head>
+<body>
+
+  <!-- Juice / Blog Section -->
+  <section>
+    <div class="juice_section">
+      <div>
+        <h3>Latest Nws & Blog</h3>
+        <h1>Get every single updates latest</h1>
+      </div>
+
+      <!-- Juice Swiper -->
+      <swiper-container id="juiceSwiper" init="false">
+        <swiper-slide>
+          <div class="juice_sec">
+            <img src="./Images/JUICE IMG (1).webp" alt="" />
+            <div>
+              <h3>Quality Food</h3>
+              <h3>February 19, 2025</h3>
+              <h3>COMMENTS (0)</h3>
+            </div>
+            <div>
+              <h3>Flavor Odyssey: Exploring the Wonders of Culinary Delights</h3>
+              <p>Restaurant where culinary excellence meets hospitality in every dish we serve settled in the heart</p>
+              <h4>Read More</h4>
+            </div>
+          </div>
+        </swiper-slide>
+
+        <swiper-slide>
+          <div class="juice_sec">
+            <img src="./Images/JUICE IMG (2).webp" alt="" />
+            <div>
+              <h3>Quality Food</h3>
+              <h3>February 19, 2025</h3>
+              <h3>COMMENTS (0)</h3>
+            </div>
+            <div>
+              <h3>Gastronomic Journeys: Unveiling the Magic of Food & Restaurants</h3>
+              <p>Restaurant where culinary excellence meets hospitality in every dish we serve settled in the heart</p>
+              <h4>Read More</h4>
+            </div>
+          </div>
+        </swiper-slide>
+
+        <swiper-slide>
+          <div class="juice_sec">
+            <img src="./Images/JUICE IMG (3).webp" alt="" />
+            <div>
+              <h3>Quality Food</h3>
+              <h3>February 19, 2025</h3>
+              <h3>COMMENTS (0)</h3>
+            </div>
+            <div>
+              <h3>Culinary Chronicles Exploring to ways They Wonders Food Restaurant</h3>
+              <p>Restaurant where culinary excellence meets hospitality in every dish we serve settled in the heart</p>
+              <h4>Read More</h4>
+            </div>
+          </div>
+        </swiper-slide>
+
+        <swiper-slide>
+          <div class="juice_sec">
+            <img src="./Images/JUICE IMG (4).webp" alt="" />
+            <div>
+              <h3>Quality Food</h3>
+              <h3>February 19, 2025</h3>
+              <h3>COMMENTS (0)</h3>
+            </div>
+            <div>
+              <h3>3 New Dishes You Must Try at Our Fast Food Restaurant</h3>
+              <p>Restaurant where culinary excellence meets hospitality in every dish we serve settled in the heart</p>
+              <h4>Read More</h4>
+            </div>
+          </div>
+        </swiper-slide>
+
+        <swiper-slide>
+          <div class="juice_sec">
+            <img src="./Images/JUICE IMG (5).webp" alt="" />
+            <div>
+              <h3>Quality Food</h3>
+              <h3>February 19, 2025</h3>
+              <h3>COMMENTS (0)</h3>
+            </div>
+            <div>
+              <h3>How We Use Technology to Improve Customer Service</h3>
+              <p>Restaurant where culinary excellence meets hospitality in every dish we serve settled in the heart</p>
+              <h4>Read More</h4>
+            </div>
+          </div>
+        </swiper-slide>
+
+        <swiper-slide>
+          <div class="juice_sec">
+            <img src="./Images/JUICE IMG (4).webp" alt="" />
+            <div>
+              <h3>Quality Food</h3>
+              <h3>February 19, 2025</h3>
+              <h3>COMMENTS (0)</h3>
+            </div>
+            <div>
+              <h3>Savor & Share Culinary Chronicles Gastronomic Gazette Tales from the Table</h3>
+              <p>Restaurant where culinary excellence meets hospitality in every dish we serve settled in the heart</p>
+              <h4>Read More</h4>
+            </div>
+          </div>
+        </swiper-slide>
+
+      </swiper-container>
+    </div>
+  </section>
+
+<script>
+  const juiceSwiper = document.getElementById("juiceSwiper");
+  Object.assign(juiceSwiper, {
+    slidesPerView: 1,
+    loop: true,
+    spaceBetween: 20,
+    breakpoints: {
+      551: { slidesPerView: 2 },
+      1001: { slidesPerView: 3 },
+      1201: { slidesPerView: 4 }
+    },
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false
+    },
+  });
+  juiceSwiper.initialize();
+</script>
+
+</body>
+</html>

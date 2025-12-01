@@ -1,0 +1,94 @@
+.quote_container {
+  display: flex;
+  width: clamp(300px, 100%, 1400px);
+  margin: auto;
+  position: relative;
+}
+
+.quote_container > div:nth-child(1) {
+  color: white;
+  width: clamp(300px, 100%, 700px);
+  background-image: url(../Images/bg-qt-h1.webp);
+  background-color: #ec3d08;
+  padding: 40px 55px;
+}
+
+.quote_container > div:nth-child(1) > h6 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 15px;
+}
+
+.quote_container > div:nth-child(1) > h1 {
+  font-size: 55px;
+  font-weight: 400;
+  margin-top: 15px;
+  display: flex;
+}
+
+.quote_container > div:nth-child(1) > button {
+  background-color: orange;
+  margin-top: 15px;
+}
+
+.quote_container > div:nth-child(1) > button > svg {
+  margin-left: 5px;
+}
+
+.quote_container > div:nth-child(2) {
+  width: clamp(300px, 100%, 700px);
+}
+.quote_container > div:nth-child(2) > img {
+  height: clamp(300px, 100%, 480px);
+  object-fit: cover;
+  width: clamp(300px, 100%, 700px);
+}
+
+.quote_container > div:nth-child(3) > img:nth-child(1) {
+}
+
+.quote_container > div:nth-child(3) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #0e1317;
+  z-index: 1;
+  height: 150px;
+  width: 150px;
+  text-align: center;
+}
+
+.quote_container > div:nth-child(3) > h5 {
+  font-size: 42px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-weight: 500;
+}
+
+@media (width <= 1024px) {
+  .quote_container > div:nth-child(1) > h1 {
+    font-size: 40px;
+  }
+
+  .quote_container > div:nth-child(3) > img:nth-child(1) {
+    height: 140px;
+    width: 140px;
+  }
+  .quote_container > div:nth-child(3) {
+    bottom: 25%;
+    right: 42%;
+  }
+
+  .quote_container > div:nth-child(3) > h5 {
+    font-size: 35px;
+  }
+}
+@media (width <= 768px) {
+  .quote_container {
+    display: none;
+  }
+}

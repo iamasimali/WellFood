@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swiper Dishes Example</title>
+  <link rel="stylesheet" href="./css/dishes.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-element-bundle.min.js"></script>
+</head>
+<body>
+
+  <!-- Main Swiper -->
+  <swiper-container init="false">
+    <swiper-slide>Slide 1</swiper-slide>
+    <swiper-slide>Slide 2</swiper-slide>
+    <swiper-slide>Slide 3</swiper-slide>
+    <swiper-slide>Slide 4</swiper-slide>
+    <swiper-slide>Slide 5</swiper-slide>
+  </swiper-container>
+
+  <!-- Dishes Section -->
+  <section>
+    <div class="dishes">
+      <div>
+        <h3>popular dishes</h3>
+        <h1>explore popular menus</h1>
+      </div>
+
+      <!-- Dishes Swiper -->
+      <swiper-container id="dishesSwiper" init="false">
+        <swiper-slide id="dishesSwiperone">
+          <img src="./Images/dishes (3).png" alt="">
+          <p>No reviews yet</p>
+          <h3>Italian Beef Pizza</h3>
+          <div>
+            <span>$50</span>
+            <span>$25</span>
+          </div>
+        </swiper-slide>
+        <swiper-slide id="dishesSwiperone">
+          <img src="./Images/dishes (4).png" alt="">
+          <p>No reviews yet</p>
+          <h3>Italian Beef Pizza</h3>
+          <div>
+            <span>$50</span>
+            <span>$25</span>
+          </div>
+        </swiper-slide>
+        <swiper-slide id="dishesSwiperone">
+          <img src="./Images/dishes (2).png" alt="">
+          <p>No reviews yet</p>
+          <h3>Italian Beef Pizza</h3>
+          <div>
+            <span>$50</span>
+            <span>$25</span>
+          </div>
+        </swiper-slide>
+        <swiper-slide id="dishesSwiperone">
+          <img src="./Images/dishes (1).png" alt="">
+          <p>No reviews yet</p>
+          <h3>Roasted Chicken</h3>
+          <div>
+            <span>$50</span>
+            <span>$25</span>
+          </div>
+        </swiper-slide>
+        <swiper-slide id="dishesSwiperone">
+          <img src="./Images/dishes (1).png" alt="">
+          <p>No reviews yet</p>
+          <h3>Fried Chicken Branch</h3>
+          <div>
+            <span>$50</span>
+            <span>$25</span>
+          </div>
+        </swiper-slide>
+      </swiper-container>
+
+    </div>
+  </section>
+
+<script>
+  const mainSwiper = document.querySelector('swiper-container:not(#dishesSwiper)');
+  Object.assign(mainSwiper, {
+    slidesPerView: 1,
+    loop: true,
+    breakpoints: {
+      640: { slidesPerView: 2 },
+      1024: { slidesPerView: 4 },
+    },
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false
+    },
+  });
+  mainSwiper.initialize();
+
+  const dishesSwiper = document.getElementById('dishesSwiper');
+  Object.assign(dishesSwiper, {
+    slidesPerView: 1,
+    loop: true,
+    spaceBetween: 20,
+    breakpoints: {
+      640: { slidesPerView: 2 },
+      1024: { slidesPerView: 4 },
+    },
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false
+    },
+  });
+  dishesSwiper.initialize();
+</script>
+
+</body>
+</html>
