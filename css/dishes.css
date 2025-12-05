@@ -1,5 +1,6 @@
 .dishes {
   width: clamp(300px, 100%, 1400px);
+  margin: auto;
 }
 
 .dishes > div:nth-child(1) {
@@ -39,10 +40,12 @@
 #dishesSwiperone > div {
   display: flex;
   justify-content: center;
+   position: relative;
 }
 #dishesSwiperone > div > img {
   height: 220px;
   width: 220px;
+ 
 }
 
 #dishesSwiperone > p:nth-child(2) {
@@ -81,5 +84,42 @@
 @media (width <= 1024px) {
   .dishes > div:nth-child(1) > h1 {
   font-size: 45px;
+}
+}
+
+
+
+.hover_btn {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    left: 17%;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0px 30px;
+    gap: 10px;
+}
+.hover_btn>button {
+    background-color: #ec3d08;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.hover_btn:hover {
+    opacity: 1;
+    transform: translateY(0px);
+}
+#dishesSwiperone:hover {
+  .hover_btn {
+    opacity: 1;
+    transform: translateY(0px);
 }
 }

@@ -1,0 +1,54 @@
+/* Common margin for both marquees */
+.swiper.marquee-swiper-1,
+.swiper.marquee-swiper-2,
+.swiper.marquee-swiper-3 {
+  margin-top: 10px;
+}
+
+/* Container for both marquees */
+.swiper.marquee-swiper-1,
+.swiper.marquee-swiper-2,
+.swiper.marquee-swiper-3 {
+  width: 100%;
+  overflow: hidden;
+  padding: 20px 0;
+}
+
+/* Slide styling */
+.swiper-slide {
+  width: auto !important;             /* slide width = text width */
+  display: inline-flex !important;
+  align-items: center;
+  white-space: nowrap !important;     /* force single line */
+  overflow: visible !important;       /* prevent clipping */
+}
+
+/* Text styling */
+.marquee-text {
+  font-size: 120px;
+  font-weight: 800;
+  letter-spacing: 10px;
+  white-space: nowrap;
+  color: transparent;
+  -webkit-text-stroke: 0.2px rgba(187, 187, 187, 0.5);
+  padding: 0 40px;
+  display: inline-block;
+}
+
+/* Stars styling */
+.ri-star-s-fill
+ {
+  color: orange;
+  -webkit-text-stroke: 0px gray;
+}
+.ri-star-line{
+  color: gray;
+}
+
+/* Linear smooth scroll wrapper for both marquees */
+.marquee-swiper-1 .swiper-wrapper,
+.marquee-swiper-2 .swiper-wrapper,
+.marquee-swiper-3 .swiper-wrapper {
+  transition-timing-function: linear !important; /* linear scroll */
+  white-space: nowrap !important;               /* single line */
+}

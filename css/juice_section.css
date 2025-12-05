@@ -1,11 +1,11 @@
-.juice_section{
-    width: clamp(300px, 100%, 1400px);
+.juice_section {
+  width: clamp(300px, 100%, 1400px);
+  margin: auto;
 }
 
 .juice_section > div:nth-child(1) {
   gap: 10px;
   margin: 60px 0;
-
 }
 .juice_section > div:nth-child(1) > h3 {
   color: #ec3d08;
@@ -27,69 +27,82 @@
 }
 
 .juice_section > div:nth-child(2) {
-    display: flex;
-    justify-content: space-around;
-    gap: 10px;
-    
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
 }
 
-
-
-
-
-
-
-.juice_sec{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    
+.juice_sec {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
 }
-.juice_sec>img{
-    width : 100%;
+.juice_sec > img {
+  width: 100%;
 }
 
-.juice_sec>div:nth-child(2){
-    background-color: #ec3d08;
-    display: flex;
-    justify-content: space-around;
-    height: 50px;
-    width: 100%;
-    align-items: center;
-    margin-top: -25px;
-
+.juice_sec > div:nth-child(2) {
+  background-color: #ec3d08;
+  display: flex;
+  justify-content: space-around;
+  height: 50px;
+  width: 100%;
+  align-items: center;
+  margin-top: -25px;
 }
-.juice_sec>div:nth-child(2)>h3{
-    color: white;
-    font-weight: 400; 
-}
-
-.juice_sec>div:nth-child(3){
-    flex-wrap: wrap;
-    width: 100%;
-    margin-top: 10px;
-}
-.juice_sec>div:nth-child(3)>h3{
-    font-size: 27px;
-    color: #0e1317;
-    font-weight: 400;
-    margin-top: 10px;
-
-}
-.juice_sec>div:nth-child(3)>p{
-    display: flex;
-    flex-wrap: wrap;
-    color: #696969;
-    font-family: "roboto", sans-serif;
-    margin-top: 10px;
-}
-.juice_sec>div:nth-child(3)>h4{
-    color: #ec3d08;
-    font-weight: 400;
-    display: flex;
-    gap: 2px;
-    align-items: center;
-    margin-top: 10px;
-
+.juice_sec > div:nth-child(2) > h3 {
+  color: white;
+  font-weight: 400;
 }
 
+.juice_sec > div:nth-child(3) {
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 10px;
+}
+.juice_sec > div:nth-child(3) > h3 {
+  font-size: 27px;
+  color: #0e1317;
+  font-weight: 400;
+  margin-top: 10px;
+}
+.juice_sec > div:nth-child(3) > p {
+  display: flex;
+  flex-wrap: wrap;
+  color: #696969;
+  font-family: "roboto", sans-serif;
+  margin-top: 10px;
+}
+.juice_sec > div:nth-child(3) > h4 {
+  color: #ec3d08;
+  font-weight: 400;
+  display: flex;
+  gap: 2px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.juice_bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 240px; /* adjust as needed */
+  background-image: var(--img);
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.5s ease;
+  z-index: 1;
+}
+
+.juice_sec:hover .juice_bg {
+  transform: scale(1.08); /* zooms only the background layer */
+}
+
+/* Content above the background */
+.juice_sec > div {
+  position: relative;
+  z-index: 2;
+}
